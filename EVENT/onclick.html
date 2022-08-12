@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onclick Event</title>
+    <script>
+        function dark() {
+            //alert('Hello');
+            document.getElementById("text").innerHTML = 'Hello Tapas';
+            document.getElementById("text").style.color = 'blue';
+            document.getElementsByTagName("body")[0].style.backgroundColor = 'black';
+        }
+        function light() {
+            document.getElementsByTagName("body")[0].style.backgroundColor = 'white';
+            document.getElementById("text").style.color = 'black';
+        }
+    </script>
+</head>
+
+<body>
+    <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi ea eum incidunt veniam provident labore eos cumque impedit. Nisi, asperiores</p>
+    <button onclick="dark()">Dark</button>
+    <button onclick="light()">Light</button>
+</body>
+
+</html>
